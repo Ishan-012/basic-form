@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'Norsebold';
+    src: url('norse/Norsebold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    margin: 0;
+    height: 100%;
+}
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    min-height: 100vh;
+    min-width: auto;
+}
+
+
+.container {
+    min-height: 100vh;
+    min-width: auto;
+    display: flex;
+    align-items: stretch;
+}
+
+
+
+
+
+.side {
+    min-height: 100vh;
+    width: fit-content;
+    background-image: url(leaves.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.logo {
+    height: 15%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: 'Norsebold', 'Times New Roman', Times, serif;
+    font-size: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 180px;
+    padding: 10px 0;
+}
+.logo img {
+    max-height: 100%;
+    max-width: auto;
+}
+
+.credit {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgb(182, 182, 182);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.credit a {
+    color: rgb(182, 182, 182);
+    text-decoration: underline;
+}
+
+.main {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.main > div {
+    margin-left: 50px;
+    margin-right: 200px;
+    margin-bottom: 24px;
+}
+
+p {
+    margin: 12px 0;
+}
+
+.form-main {
+    background-color: #fff;
+    padding: 24px 48px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.form-main ~ * {
+    margin-left: 50px;
+}
+
+.user-input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.form-header {
+    margin-bottom: 24px;
+}
+
+label {
+    color: rgb(88, 88, 88);
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+input {
+    width: 300px;
+    border-color: #E5E7EB;
+    border-style: solid;
+    border-radius: 3px;
+}
+
+input:focus {
+    outline: none;
+    border-color: blue;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+}
+
+input[type = "password"]:user-invalid {
+    border-color: red;
+}
+
+.user-input div {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    font-size: 18px;
+    padding: 15px 45px;
+    margin: 30px 0;
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.15);
+}
+
+.log {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+a {
+    color: #596D48;
+    text-decoration: none;
+}
